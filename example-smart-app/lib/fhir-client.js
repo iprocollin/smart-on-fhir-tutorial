@@ -17276,7 +17276,7 @@ BBClient.authorize = function(params, errback){
     }
 
     alert(redirect_to);
-    window.location.href = redirect_to;
+    //window.location.href = redirect_to;
   }, errback);
 };
 
