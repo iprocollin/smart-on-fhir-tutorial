@@ -17271,9 +17271,11 @@ BBClient.authorize = function(params, errback){
       "aud="+encodeURIComponent(params.server);
     
     if (typeof client.launch !== 'undefined' && client.launch) {
+
        redirect_to += "&launch="+encodeURIComponent(client.launch);
     }
 
+    alert(redirect_to);
     window.location.href = redirect_to;
   }, errback);
 };
